@@ -1,0 +1,46 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// font-family: 'Montserrat', sans-serif;
+
+//*****BODY*****//
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 50px;
+}
+
+//*****ASK*****//
+.askForm {
+  // font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+#question {
+  margin: 20px 0;
+}
+
+//*****ANSWER*****//
+div.container {
+  text-align: center;
+  width: 800px;
+}
+.leftBorder {
+  border-left: 4px solid #eee;
+  margin: 30px 0;
+}
+.first {
+  font-size: 24px;
+  color: #222;
+}
+.second {
+  font-size: 20px;
+  color: #bbb;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+

@@ -1,0 +1,26 @@
+<h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p>
+
+<div class="container">
+  <div class="leftBorder">
+    <p class="first"><%= @query %></p>
+    <p class="second">-- You</p>
+  </div>
+
+  <% unless @query == "I am going to work right now!" %>
+    <% if @queryLast == "?" %>
+      <% @coachAnswer = "Silly question, get dressed and go to work!" %>
+    <% else %>
+      <% @coachAnswer =  "I don't care, get dressed and go to work!" %>
+    <% end %>
+  <% end %>
+  <% @coachAnswer = "" if @query == "I am going to work right now!" %>
+
+  <div class="leftBorder">
+    <p class="first"><%= @coachAnswer %></p>
+    <p class="second">-- Your coach</p>
+  </div>
+
+
+  <%= link_to "Ask a new question", ask_path %>
+</div>
